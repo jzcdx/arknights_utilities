@@ -31,13 +31,17 @@ file.close()
 
 print("-----------------------------------------------------------")
 tags = input("Enter your tags separated by spaces: ").split()
+print("-----------------------------------------------------------")
+
 matches = []
+
+#print(set(t_c) <= set(tags)) #Checks if t_c is a subset of tags 
 for i in big_d.items():
     key = i[0]
     vals = [x.lower() for x in i[1]]
     if set(vals) <= set(tags):
         matches.append(i)
-print("-----------------------------------------------------------")
+
 print("Matches: ")
 
 if matches == []: 
@@ -47,8 +51,7 @@ else:
         print(i)
 
 
-#print(set(t_c) <= set(tags)) #Checks if t_c is a subset of tags 
-    
+
     
     
     
