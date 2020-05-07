@@ -29,9 +29,21 @@ while line != "":
     line = file.readline()
 file.close()
 
+options = ["Melee", "Ranged", "Guard", "Medic", "Vanguard", "Caster", "Sniper",
+        "Defender", "Supporter", "Specialist", "Healing", "Support", "DPS",
+        "AoE", "Slow", "Survival", "Defense", "Debuff", "Shift", "Crowd Control",
+        "Nuker", "Summon", "Fast-Redeploy", "DP-Recover", "Robot"]
+
+print("-----------------------------------------------------------")
+print("Options: ")
+print("---------")
+print("Melee, Ranged, Guard, Medic, Vanguard, Caster, Sniper")
+print("Defender, Supporter, Specialist, Healing, Support, DPS")
+print("AoE, Slow, Survival, Defense, Debuff, Shift, Crowd Control")
+print("Nuker, Summon, Fast-Redeploy, DP-Recover, Robot")
 print("-----------------------------------------------------------")
 tags = input("Enter your tags separated by spaces: ").split()
-print("-----------------------------------------------------------")
+
 
 matches = []
 
@@ -49,7 +61,6 @@ if matches == []:
 else:
     for i in matches:
         print(i)
-
 
 
     
