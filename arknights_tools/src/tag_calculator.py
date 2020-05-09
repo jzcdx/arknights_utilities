@@ -54,8 +54,6 @@ else:
     for i in matches:
         print(i)
 
-file.close()
-    
     
     
     
