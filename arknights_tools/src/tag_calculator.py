@@ -42,20 +42,6 @@ def calculate_tags(tags):
     
     return matches
 
-
-tags = input("Input tags:")
-
-matches = calculate_tags(tags)
-
-print("Matches: ")
-if matches == []: 
-    print("None")
-else:
-    for i in matches:
-        print(i)
-
-file.close()
-print("line")
     
     
     
