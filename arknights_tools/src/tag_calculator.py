@@ -39,7 +39,6 @@ def calculate_tags(tags):
         vals = [x.lower() for x in i[1]]
         if set(vals) <= set(tags):
             matches.append(i)
-    
     return matches
 
     
